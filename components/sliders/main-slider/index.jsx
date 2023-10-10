@@ -1,7 +1,7 @@
 const MainSlider = () => {
     return (
         <div className="p-4" >
-            Enter
+            MainSlider
         </div>
     );
 }
