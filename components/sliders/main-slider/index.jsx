@@ -1,9 +1,14 @@
+import HotNews from "./hot-news";
+
 const MainSlider = () => {
-    return (
-        <div className="p-4" >
-            MainSlider
-        </div>
-    );
+   return (
+      <section className=" bg-zinc-100 rounded-lg p-4 flex flex-col gap-6 ">
+         <HotNews/>
+         <div className=" flex justify-between items-center gap-4 ">
+         Test
+         </div>
+      </section>
+   ); 
 }
 
 export default MainSlider;
