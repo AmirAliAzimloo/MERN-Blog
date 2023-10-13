@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const HeaderSearch = () => {
   const [arrowShow, setarrowShow] = useState(false);
   return (
-    <form className=" flex justify-center items-center border-2 bg-zinc-100 rounded-full w-[300px]  py-1 px-2">
+    <form className=" flex justify-center items-center border-2 bg-zinc-100 rounded-full w-[300px] mr-40 py-1 px-2">
       <input
         onChange={(e) => {
           e.target.value.length > 0 ? setarrowShow(true) : setarrowShow(false);
