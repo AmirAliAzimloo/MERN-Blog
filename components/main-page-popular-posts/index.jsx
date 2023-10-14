@@ -1,4 +1,6 @@
 import Link from "next/link";
+import BlogBigBox from "../boxes/big-blog-box";
+import BlogMainBox from "../boxes/blog-main-box";
 
 const MainPagePopularPosts = () => {
 
@@ -45,7 +47,10 @@ const MainPagePopularPosts = () => {
             </div>
          </header>
          <div className=" flex justify-between items-center gap-4 ">
-            other blogs
+         <BlogBigBox data={posts[0]} />
+         <BlogMainBox data={posts[1]} />
+         <BlogMainBox data={posts[2]} />
+         
          </div>
       </section>
    );
