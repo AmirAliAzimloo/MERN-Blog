@@ -140,7 +140,7 @@ const MainPageBestBlogsAndNewPosts = () => {
 
 
    return (
-      <section className="  bg-zinc-100 rounded-lg p-4 flex  justify-between items-start gap-4">
+      <section className=" mx-8 bg-zinc-100 rounded-lg p-4 flex  justify-between items-start gap-4">
          <div className=" flex flex-col gap-12 w-[280px] min-w-[280px]">
             <h2 className=" title_style">برترین وبلاگ ها</h2>
             <div className=" flex flex-col gap-4">

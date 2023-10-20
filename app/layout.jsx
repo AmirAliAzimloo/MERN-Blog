@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import "../styles/globals.css";
 import Header from "@/components/header";
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
           <Header />
           <div className=" container mx-auto flex flex-col gap-12">
             {children}
+            <Footer />
           </div>
         </div>
       </body>
