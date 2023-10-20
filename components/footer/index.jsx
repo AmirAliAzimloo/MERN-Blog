@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import GoToTop from "./go-to-top";
 
 const Footer = () => {
 
@@ -19,6 +20,7 @@ const Footer = () => {
          <p>تمامی حقوق مادی و معنوی این سایت متعلق به 
         <Link className="text-blue-500" target="_blank" href={"https://github.com/AmirAliAzimloo"}> Amir Ali Azimloo </Link>    
          می باشد و هرگونه کپی برداری، غیرقانونی محسوب خواهد شد.</p>
+         <GoToTop />
       </footer>
    );
 }
