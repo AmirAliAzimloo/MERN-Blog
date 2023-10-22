@@ -1,4 +1,5 @@
 import BlogFollowBtn from "@/components/blog-follow-btn";
+import NewBlogBox from "@/components/boxes/new-blog-box";
 import Image from "next/image";
 
 const SingleBlogPage = ({ params }) => {
@@ -75,7 +76,9 @@ const SingleBlogPage = ({ params }) => {
             <BlogFollowBtn />
          </section>
          <section className=" flex flex-col gap-4">
-            NewBlogBox
+            {
+               data.posts.map((da, i) => (<NewBlogBox key={i} data={da} />))
+            }
          </section>
       </div>
         </>

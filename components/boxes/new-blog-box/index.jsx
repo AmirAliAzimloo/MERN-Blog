@@ -6,8 +6,9 @@ import { BiLike } from "react-icons/bi";
 
 
 const NewBlogBox = ({ data }) => {
+
    return (
-      <article className="  w-full h-[16.5rem] flex items-center p-3  bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.25)]  rounded-lg transition-all duration-500 hover:shadow-[0px_10px_5px_rgba(0,0,0,0.35)]">
+      <article className=" mx-8  h-[16.5rem] flex items-center p-3  bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.25)]  rounded-lg transition-all duration-500 hover:shadow-[0px_10px_5px_rgba(0,0,0,0.35)]">
          <div className="   flex justify-start items-start gap-4">
             <div className=" flex justify-center items-center">
                <Link href={data.slug} className=" relative w-[20rem]  rounded-lg  h-[15rem]">
