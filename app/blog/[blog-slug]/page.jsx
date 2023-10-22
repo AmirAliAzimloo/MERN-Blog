@@ -1,6 +1,7 @@
+import BlogFollowBtn from "@/components/blog-follow-btn";
 import Image from "next/image";
 
-const SingleBlogPage = () => {
+const SingleBlogPage = ({ params }) => {
 
     const data = {
         image: "/images/ads/business_social_media_banner_19.jpg",
@@ -71,7 +72,7 @@ const SingleBlogPage = () => {
                <div>توسط {data.followers_number} نفر دنبال می شود...</div>
                <div>{data.followings_number} را دنبال می کند...</div>
             </div>
-            BlogFollowBtn
+            <BlogFollowBtn />
          </section>
          <section className=" flex flex-col gap-4">
             NewBlogBox
