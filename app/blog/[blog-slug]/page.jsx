@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SingleBlogPage = () => {
 
     const data = {
@@ -55,10 +57,26 @@ const SingleBlogPage = () => {
         ],
      }
 
-     
+
     return (
         <>
-            SingleBlogPage
+             <div className=" flex flex-col gap-12">
+         <section className=" flex flex-col gap-8 items-center">
+            <div>
+               <Image className=" rounded-full border-4 border-blue-500" alt={data.title} width={150} height={150} src={data.image} />
+            </div>
+            <h1 className="title_style">{data.title}</h1>
+            <p className=" w-[600px] max-w-[600px]">{data.short_desc}</p>
+            <div className=" flex justify-center items-center gap-8">
+               <div>توسط {data.followers_number} نفر دنبال می شود...</div>
+               <div>{data.followings_number} را دنبال می کند...</div>
+            </div>
+            BlogFollowBtn
+         </section>
+         <section className=" flex flex-col gap-4">
+            NewBlogBox
+         </section>
+      </div>
         </>
     );
 }
