@@ -5,6 +5,7 @@ import { BiLike } from "react-icons/bi";
 
 import Image from "next/image";
 import BreadCrumb from "@/components/post-page/bread-crumb";
+import PostMeta from "@/components/post-page/post-meta";
 
 const SinglePostPage = ({ params }) => {
 
@@ -28,7 +29,12 @@ const SinglePostPage = ({ params }) => {
       likes_number: 10
    };
 
-   
+   const metaDataCompData = {
+      study_time: data.study_time,
+      created_at: data.created_at,
+      blog_link: data.blog_link,
+      slug: data.slug,
+   }
 
 
 
@@ -46,7 +52,7 @@ const SinglePostPage = ({ params }) => {
                   </div>
                   <section className=" flex justify-between items-center gap-4">
                      "BlogerBox"
-                     "PostMeta"
+                     <PostMeta data={metaDataCompData} />
                   </section>
                   <section className=" flex flex-col gap-12  w-full">
                      <h1 className="title_style">عنوان مقاله این هست...</h1>
