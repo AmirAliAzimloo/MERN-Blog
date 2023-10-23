@@ -4,6 +4,7 @@ import { BiLike } from "react-icons/bi";
 
 
 import Image from "next/image";
+import BreadCrumb from "@/components/post-page/bread-crumb";
 
 const SinglePostPage = ({ params }) => {
 
@@ -37,7 +38,7 @@ const SinglePostPage = ({ params }) => {
             <main className=" flex flex-col gap-12 w-full">
                <div className=" flex flex-col gap-12 w-full bg-zinc-100 p-4 rounded-lg">
                   <div className=" flex justify-between items-center w-full">
-                    "BreadCrumb"
+                  <BreadCrumb blog_link={data.blog_link} blog_title={data.blog_title} post_title={data.title} />
                      <div className=" bg-white p-2 rounded-xl flex justify-end items-center gap-2">
                         <span>{data.likes_number}</span>
                         <BiLike className=" cursor-pointer w-6 h-6 text-zinc-600 transition-all duration-300 hover:text-blue-500" />
