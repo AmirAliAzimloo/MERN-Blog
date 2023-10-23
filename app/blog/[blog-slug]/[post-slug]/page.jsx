@@ -41,7 +41,7 @@ const SinglePostPage = ({ params }) => {
    return (
       <div className="flex flex-col gap-12 ">
          <div className=" flex justify-between items-start gap-4">
-            <main className=" flex flex-col gap-12 w-full">
+            <main className=" mr-8 flex flex-col gap-12 w-full">
                <div className=" flex flex-col gap-12 w-full bg-zinc-100 p-4 rounded-lg">
                   <div className=" flex justify-between items-center w-full">
                   <BreadCrumb blog_link={data.blog_link} blog_title={data.blog_title} post_title={data.title} />
@@ -88,7 +88,7 @@ const SinglePostPage = ({ params }) => {
                   </section>
                </div>
             </main>
-            <aside className=" sticky top-[5.8rem]  left-0 w-[360px] min-w-[360px] flex flex-col gap-4">
+            <aside className=" mx-8 sticky top-[5.8rem]  left-0 w-[360px] min-w-[360px] flex flex-col gap-4">
                <div className="bg-zinc-100 p-4 rounded-lg">
                  "BlogerBox"
                </div>
@@ -97,10 +97,10 @@ const SinglePostPage = ({ params }) => {
                </div>
             </aside>
          </div>
-         <section className=" flex flex-col gap-12  w-full bg-zinc-100 p-4 rounded-lg">
+         <section className=" mx-8 flex flex-col gap-12   bg-zinc-100 p-4 rounded-lg">
          "BlogOtherPosts"
          </section>
-         <section className=" flex flex-col gap-12  w-full bg-zinc-100 p-4 rounded-lg h-[400px]">
+         <section className=" mx-8 flex flex-col gap-12   bg-zinc-100 p-4 rounded-lg h-[400px]">
             <h2 className="title_style">دیدگاه های این مقاله</h2>
          </section>
          <div className=" fixed bottom-2 right-0 left-0 flex justify-center items-center ">
