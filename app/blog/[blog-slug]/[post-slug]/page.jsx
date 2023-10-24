@@ -7,6 +7,7 @@ import Image from "next/image";
 import BreadCrumb from "@/components/post-page/bread-crumb";
 import PostMeta from "@/components/post-page/post-meta";
 import BlogerBox from "@/components/boxes/bloger-box";
+import RandomPostBox from "@/components/boxes/random-post";
 
 const SinglePostPage = ({ params }) => {
 
@@ -147,7 +148,9 @@ const SinglePostPage = ({ params }) => {
                <BlogerBox data={blogerData} />
                </div>
                <div className="bg-zinc-100 p-4 rounded-lg flex flex-col  gap-6">
-               "RandomPostBox"
+               {
+                     randomPosts.map((da, i) => <RandomPostBox key={i} data={da} />)
+               }
                </div>
             </aside>
          </div>
