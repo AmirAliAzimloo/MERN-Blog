@@ -6,6 +6,7 @@ import { BiLike } from "react-icons/bi";
 import Image from "next/image";
 import BreadCrumb from "@/components/post-page/bread-crumb";
 import PostMeta from "@/components/post-page/post-meta";
+import BlogerBox from "@/components/boxes/bloger-box";
 
 const SinglePostPage = ({ params }) => {
 
@@ -35,6 +36,14 @@ const SinglePostPage = ({ params }) => {
       blog_link: data.blog_link,
       slug: data.slug,
    }
+
+   
+   const blogerData = {
+      img: data.blog_image,
+      title: data.blog_title,
+      short_desc: data.blog_short_desc,
+      link: data.blog_link
+   };
 
    const randomPosts = [
       {
@@ -96,7 +105,7 @@ const SinglePostPage = ({ params }) => {
                      </div>
                   </div>
                   <section className=" flex justify-between items-center gap-4">
-                     "BlogerBox"
+                     <BlogerBox data={blogerData} />
                      <PostMeta data={metaDataCompData} />
                   </section>
                   <section className=" flex flex-col gap-12  w-full">
@@ -135,7 +144,7 @@ const SinglePostPage = ({ params }) => {
             </main>
             <aside className=" mx-8 sticky top-[5.8rem]  left-0 w-[360px] min-w-[360px] flex flex-col gap-4">
                <div className="bg-zinc-100 p-4 rounded-lg">
-                 "BlogerBox"
+               <BlogerBox data={blogerData} />
                </div>
                <div className="bg-zinc-100 p-4 rounded-lg flex flex-col  gap-6">
                "RandomPostBox"
