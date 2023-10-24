@@ -36,6 +36,51 @@ const SinglePostPage = ({ params }) => {
       slug: data.slug,
    }
 
+   const randomPosts = [
+      {
+         img: "/images/posts/mobile1.jpg",
+         title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+         short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+         link: "/test"
+      },
+      {
+         img: "/images/posts/mobile1.jpg",
+         title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+         short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+         link: "/test"
+      },
+      {
+         img: "/images/posts/mobile1.jpg",
+         title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+         short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+         link: "/test"
+      },
+      {
+         img: "/images/posts/mobile1.jpg",
+         title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+         short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+         link: "/test"
+      },
+      // {
+      //    img: "/images/posts/mobile1.jpg",
+      //    title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+      //    short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+      //    link: "/test"
+      // },
+      // {
+      //    img: "/images/posts/mobile1.jpg",
+      //    title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+      //    short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+      //    link: "/test"
+      // },
+      // {
+      //    img: "/images/posts/mobile1.jpg",
+      //    title: " تسیبخهت خسه تیخبهتس خیهبتهت س",
+      //    short_desc: "خهستیخ شسخعیب شسبخشتسیخبهتش سیخهبش سخیبه",
+      //    link: "/test"
+      // },
+   ]
+
 
 
    return (
