@@ -1,13 +1,13 @@
 
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { BiLike } from "react-icons/bi";
-
-
 import Image from "next/image";
 import BreadCrumb from "@/components/post-page/bread-crumb";
 import PostMeta from "@/components/post-page/post-meta";
 import BlogerBox from "@/components/boxes/bloger-box";
 import RandomPostBox from "@/components/boxes/random-post";
+import BlogOtherPosts from "@/components/sliders/blog-other-posts";
+
 
 const SinglePostPage = ({ params }) => {
 
@@ -155,7 +155,7 @@ const SinglePostPage = ({ params }) => {
             </aside>
          </div>
          <section className=" mx-8 flex flex-col gap-12   bg-zinc-100 p-4 rounded-lg">
-         "BlogOtherPosts"
+         <BlogOtherPosts />
          </section>
          <section className=" mx-8 flex flex-col gap-12   bg-zinc-100 p-4 rounded-lg h-[400px]">
             <h2 className="title_style">دیدگاه های این مقاله</h2>
