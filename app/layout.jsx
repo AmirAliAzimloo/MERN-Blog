@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import "../styles/globals.css";
 import Header from "@/components/header";
+import SplashScreenProvider from "./providers/splash-screen-provider";
 
 export const metadata = {
   title: "MERN STACK APP",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <SplashScreenProvider>
         <div className=" flex flex-col gap-12">
           <Header />
           <div className=" container mx-auto flex flex-col gap-12">
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </div>
+      </SplashScreenProvider>
       </body>
     </html>
   );
